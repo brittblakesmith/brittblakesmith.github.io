@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "futura";
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/***** NAV BAR ******/
+
+nav {
+	background-color: white;
+	text-align: center;
+	color: black;
+	opacity: 0.97;
+}
+
+nav ul {
+	list-style: none;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a:link {
+	font-style: none;
+	text-decoration: none;
+	float: center;
+	color: #737373;
+}
+
+nav a:visited, a:hover, a:active {
+	color: #404040;
+	text-decoration: none;
+}
+
+/*****About*****/
+
+.about {
+	text-align: center;
+	color: black;
+	padding: 5%;
+	display: flex;
+
+}
+
+
+.hello {
+	font-size: 2vw;
+	float: left;
+}
+
+.me {
+	font-size: 2vw;
+}
+
+
+/******Sections******/
+
+.container {
+	font-size: 36px;
+	color: white;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+
+}
+
+/*******FRONT********/
+.resume {
+	
+	background: none;
+}
+
+.resume:hover {
+	overflow: scroll;
+	background-color: #bfbfbf;
+}
+
+.resumeBack {
+
+}
+
+.fe {
+	margin: auto 0;
+	background: none;
+}
+
+.fe:hover {
+	background-color: #808080;
+}
+
+.feBack {
+	font-size: 16px;
+}
+
+.be {
+	background: none;
+	margin: auto 0;
+}
+
+.be:hover {
+	background-color: #404040;
+	
+}
+
+.beBack {
+	font-size: 1vw;
+}
+.contact {
+	background: none;
+	margin: auto 0;
+}
+
+.contact:hover {
+	background-color: #000000;
+
+}
+
+.contactBack {
+
+}
+
+
+/**************FLIP***********/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .vertical.flip-container.hover .flipper {
+		transform: rotateX(180deg);
+	}
+
+/*.flip-container, .front, .back {
+}*/
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	 /*for firefox 31*/ 
+	transform: rotateX(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateX(180deg);
+
+}
+
+
+/*****FOOOTER******/
+
+footer {
+	background-color: white;
+	padding: 5px;
+	text-align: right;
+	color: #404040;
+	height: 50px;
+	opacity: 0.97;	
+}
+
+footer img {
+	opacity: 1;
+	height: 48px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
